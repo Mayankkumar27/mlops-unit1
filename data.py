@@ -8,3 +8,12 @@ print(df.describe())
 
 print("\n--- Feature Correlation Matrix ---")
 print(df.drop('species', axis=1).corr())
+
+run_stats = True
+run_corr = True
+
+if run_stats:
+    print("\n[Branch] Dataset statistics executed")
+
+if run_corr:
+    print("\n[Branch] Feature correlation executed")
